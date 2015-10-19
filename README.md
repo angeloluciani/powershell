@@ -6,6 +6,7 @@ global_value_item_property.ps1
 
 get from popipopi.txt the strings relate get-item
 
+...
   get-item 2001 | get-property "values['RemitNotificationStep']" | equals "" | verify-true
   get-item 2001 | get-property "values['CpidCodeType']" | equals "*LEI" | verify-true
   get-item 2001 | get-property "values['LoadType']" | equals "*BL" | verify-true
@@ -15,7 +16,7 @@ get from popipopi.txt the strings relate get-item
   get-item 2001 | get-property "values['CommercialorTreasury']" | equals Yes | verify-true
     
 return in the result.txt the global values you can insert in rcptt
-    
+...    
 global [val property_CpDomicile "values['CpDomicile']"]
 global [val property_ModifyUser "values['ModifyUser']"]
 global [val property_EmirNotificationStep "values['EmirNotificationStep']"]
